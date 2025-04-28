@@ -48,7 +48,7 @@ public class AdminService {
 				
 			 RechargeHistory thatmightexpire=recharges.get(recharges.size()-1);
 			
-			 LocalDateTime paymentdate=thatmightexpire.getRechargeData();
+			 LocalDateTime paymentdate=thatmightexpire.getRechargeDate();
 			
 			 	LocalDateTime expirydate=paymentdate.plusDays(thatmightexpire.getPlan().getValidityInDays());
 			

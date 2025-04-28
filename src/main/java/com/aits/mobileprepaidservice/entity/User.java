@@ -27,7 +27,6 @@ public class User {
     private String mobile;
     private String email;
     private String password;
-    
     public Long getId() {
 		return id;
 	}

@@ -18,13 +18,9 @@ import com.aits.mobileprepaidservice.security.JwtUtil;
 @RequestMapping("/auth")
 public class AuthController {
 
-    @Autowired
-    private UserRepository userRepo;
-    @Autowired
-    private PasswordEncoder encoder;
-
-    @Autowired
-    private JwtUtil jwtUtil;
+    @Autowired private UserRepository userRepo;
+    @Autowired private PasswordEncoder encoder;
+    @Autowired private JwtUtil jwtUtil;
 
     //Endpoint to register user
     @PostMapping("/register")
